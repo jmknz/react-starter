@@ -1,0 +1,47 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "import"
+  ],
+  "rules": {
+    "arrow-body-style": "off",
+    "global-require": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "indent": ["error", 2],
+    "jsx-a11y/label-has-associated-control": ["error", { "assert": "either"}],
+    "jsx-quotes": "error",
+    "linebreak-style": "off",
+    "no-multiple-empty-lines": ["warn", { "max": 1 }],
+    "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"] }],
+    "no-unused-expressions": ["error", { "allowTaggedTemplates": true }],
+    "quotes": "error",
+    "react/jsx-filename-extension": ["warn", { "extensions": [ ".js", ".jsx" ] }],
+    "react/jsx-one-expression-per-line": "off",
+    "react/prefer-stateless-function": "warn",
+    "semi": "error",
+    "space-before-function-paren": "off"
+  }
+}

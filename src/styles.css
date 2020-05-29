@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+
+/* start custom styles */
+
+.app {
+  min-height: 100vh;
+}
+
+/*  end custom styles  */
+
+@tailwind utilities;
